@@ -1,6 +1,6 @@
-project = "%%wp_project%%"
+project = "ipotato"
 
-app "%%wp_project%%" {
+app "ipotato" {
   config {
     env = {
       "CONFIG_PATH" = "/opt/config/config.hcl"
@@ -12,7 +12,7 @@ app "%%wp_project%%" {
     registry {
       // Replace with your docker registry of choice - ttl.sh is not for production
       use "docker" {
-        image     = "ttl.sh/%%wp_project%%"
+        image     = "ttl.sh/ipotato"
         tag        = "1h" // recommend gitrefpretty() for most registries
       }
     }
